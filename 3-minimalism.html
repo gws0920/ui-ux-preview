@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exaggerated Minimalism 风格 - 极简主义</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .giant { font-size: clamp(3rem, 10vw, 10rem); font-weight: 900; letter-spacing: -0.04em; line-height: 0.9; }
+        .underline-accent { text-decoration: underline; text-decoration-color: #FF3D00; text-underline-offset: 8px; text-decoration-thickness: 3px; }
+    </style>
+</head>
+<body class="bg-white text-black min-h-screen">
+
+    <nav class="px-8 py-6 flex items-center justify-between border-b border-gray-100">
+        <span class="text-lg font-black tracking-tight">MONO.</span>
+        <a href="#" class="text-sm font-light text-gray-500 hover:text-black transition cursor-pointer underline-accent">Let's talk</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="px-8 pt-24 pb-20">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="giant">Minimalism.</h1>
+            <p class="mt-12 text-xl font-light text-gray-400 max-w-md leading-relaxed">
+                极致克制。巨型字体 · 极致留白 · 纯黑白 · 单色点缀。
+            </p>
+        </div>
+    </section>
+
+    <div class="mx-8 h-px bg-gray-100"></div>
+
+    <!-- Usage Guide - 极简风格 -->
+    <section class="px-8 py-20">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-xs font-light text-gray-400 uppercase tracking-widest">Claude Code</span>
+            <h2 class="mt-4 text-3xl md:text-4xl font-black tracking-tight">使用指南</h2>
+            <div class="mt-12 grid md:grid-cols-2 gap-x-20 gap-y-6">
+                <div class="border-b border-gray-100 pb-6">
+                    <code class="text-sm font-light text-gray-600">/ui-ux-pro-max 用极简主义风格，生成一个建筑事务所官网</code>
+                </div>
+                <div class="border-b border-gray-100 pb-6">
+                    <code class="text-sm font-light text-gray-600">/ui-ux-pro-max 用 Minimalism 风格，做一个设计师个人作品集</code>
+                </div>
+                <div class="border-b border-gray-100 pb-6">
+                    <code class="text-sm font-light text-gray-600">/ui-ux-pro-max Minimalism style, create a luxury brand page</code>
+                </div>
+                <div class="border-b border-gray-100 pb-6">
+                    <code class="text-sm font-light text-gray-600">/ui-ux-pro-max 用极简风格，生成一个摄影师个人主页</code>
+                </div>
+            </div>
+            <div class="mt-12 flex flex-wrap gap-6 text-xs font-light text-gray-400 uppercase tracking-widest">
+                <span>建筑事务所</span><span>·</span><span>时尚品牌</span><span>·</span><span>作品集</span><span>·</span><span>摄影师主页</span><span>·</span><span>律师事务所</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="mx-8 h-px bg-gray-100"></div>
+
+    <!-- Numbers -->
+    <section class="px-8 py-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div><div class="text-5xl font-black tracking-tight">12</div><div class="mt-2 text-sm font-light text-gray-400">年行业经验</div></div>
+            <div><div class="text-5xl font-black tracking-tight">200+</div><div class="mt-2 text-sm font-light text-gray-400">完成项目</div></div>
+            <div><div class="text-5xl font-black tracking-tight">98%</div><div class="mt-2 text-sm font-light text-gray-400">满意度</div></div>
+            <div><div class="text-5xl font-black tracking-tight">15</div><div class="mt-2 text-sm font-light text-gray-400">设计大奖</div></div>
+        </div>
+    </section>
+
+    <div class="mx-8 h-px bg-gray-100"></div>
+
+    <footer class="px-8 py-8 flex items-center justify-between text-xs text-gray-400 font-light">
+        <span>© 2024 MONO.</span><span>Shanghai / Tokyo / Berlin</span>
+    </footer>
+</body>
+</html>

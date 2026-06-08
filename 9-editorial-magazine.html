@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Magazine 风格 - 杂志排版</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Source Sans 3', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-[#FDFCF9] text-[#1a1a1a] min-h-screen">
+
+    <nav class="border-b border-gray-200 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <span class="serif text-2xl font-bold italic">Atelier</span>
+            <div class="hidden md:flex gap-8 text-sm font-light uppercase tracking-widest text-gray-500">
+                <a href="#" class="hover:text-black transition cursor-pointer">Culture</a>
+                <a href="#" class="hover:text-black transition cursor-pointer">Design</a>
+                <a href="#" class="hover:text-black transition cursor-pointer">Travel</a>
+            </div>
+            <button class="text-sm uppercase tracking-widest text-gray-500 hover:text-black transition cursor-pointer">Subscribe</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="px-6 py-16 md:py-20">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-7">
+                <span class="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">Editorial / Magazine</span>
+                <h1 class="mt-4 text-5xl md:text-7xl font-black leading-[0.95] tracking-tight serif">
+                    The Art of<br><em>Typography</em>
+                </h1>
+                <p class="mt-8 text-lg font-light text-gray-600 leading-relaxed max-w-lg">
+                    衬线字体 · 杂志排版 · 优雅留白 · 文艺气质。
+                </p>
+            </div>
+            <div class="md:col-span-5">
+                <div class="aspect-[3/4] bg-gradient-to-b from-[#e8e0d4] to-[#d4c8b8] rounded-sm flex items-end p-8">
+                    <span class="serif text-4xl italic text-[#8b7355]">23</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6"><hr class="border-gray-200"></div>
+
+    <!-- Usage Guide - 杂志排版风格 -->
+    <section class="px-6 py-16">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <span class="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">Claude Code</span>
+                <h2 class="mt-4 serif text-3xl font-bold italic">使用指南</h2>
+                <p class="mt-4 text-sm font-light text-gray-500 leading-relaxed">在 Claude Code 中输入以下命令，即可生成杂志排版风格页面。</p>
+                <div class="mt-8 flex flex-wrap gap-3 text-xs font-light text-gray-400 uppercase tracking-widest">
+                    <span>文化媒体</span><span>·</span><span>奢侈品</span><span>·</span><span>摄影集</span><span>·</span><span>书店</span><span>·</span><span>旅行杂志</span>
+                </div>
+            </div>
+            <div class="md:col-span-8 space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <span class="text-xs uppercase tracking-widest text-gray-400">01</span>
+                    <code class="block mt-2 text-sm font-light text-gray-700">/ui-ux-pro-max 用 Editorial 杂志风格，生成一个文化媒体首页</code>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <span class="text-xs uppercase tracking-widest text-gray-400">02</span>
+                    <code class="block mt-2 text-sm font-light text-gray-700">/ui-ux-pro-max 用杂志排版风格，做一个奢侈品品牌官网</code>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <span class="text-xs uppercase tracking-widest text-gray-400">03</span>
+                    <code class="block mt-2 text-sm font-light text-gray-700">/ui-ux-pro-max Editorial style, create a photography portfolio</code>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <span class="text-xs uppercase tracking-widest text-gray-400">04</span>
+                    <code class="block mt-2 text-sm font-light text-gray-700">/ui-ux-pro-max 用 Magazine 风格，生成一个独立书店官网</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6"><hr class="border-gray-200"></div>
+
+    <!-- Quote -->
+    <section class="px-6 py-16 bg-[#1a1a1a] text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <blockquote class="serif text-3xl md:text-4xl italic leading-relaxed">"真正的奢侈不是拥有更多，<br>而是拥有更多的时间。"</blockquote>
+            <cite class="block mt-6 text-sm uppercase tracking-widest text-gray-400 not-italic">— Tom Ford</cite>
+        </div>
+    </section>
+
+    <footer class="px-6 py-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto flex items-center justify-between text-xs text-gray-400">
+            <span class="serif italic text-base text-black">Atelier</span>
+            <span>© 2024. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2K Aesthetic 风格 - 千禧风</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Space Grotesk', sans-serif; }
+        body { background: linear-gradient(180deg, #f8e8ff 0%, #e0f0ff 100%); min-height: 100vh; }
+        .chrome-text { background: linear-gradient(180deg, #fff 0%, #C0C0C0 40%, #fff 50%, #aaa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .y2k-card { background: rgba(255,255,255,0.6); border: 2px solid rgba(255,105,180,0.3); border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(148,0,211,0.1); }
+        .y2k-btn { background: linear-gradient(180deg, #FF69B4, #9400D3); border-radius: 999px; box-shadow: 0 4px 12px rgba(255,105,180,0.4), inset 0 1px 2px rgba(255,255,255,0.5); }
+        .y2k-pill { background: rgba(255,255,255,0.5); border: 1.5px solid rgba(148,0,211,0.2); border-radius: 999px; }
+        .glossy { position: relative; overflow: hidden; }
+        .glossy::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%; background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, transparent 100%); border-radius: inherit; pointer-events: none; }
+    </style>
+</head>
+<body class="p-6 md:p-10 text-[#1a0033]">
+
+    <nav class="max-w-5xl mx-auto flex items-center justify-between mb-10">
+        <span class="text-xl font-bold" style="background:linear-gradient(90deg,#FF69B4,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent">GLOSS.Y</span>
+        <button class="y2k-btn px-5 py-2 text-white text-sm font-medium cursor-pointer glossy">Join Now</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-4xl mx-auto text-center mb-10">
+        <div class="chrome-text text-5xl md:text-7xl font-bold mb-4">Y2K</div>
+        <h1 class="text-3xl md:text-4xl font-bold" style="background:linear-gradient(90deg,#FF69B4,#00FFFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent">千禧美学风格</h1>
+        <p class="mt-4 text-gray-500">金属渐变 · 透明塑料感 · 霓虹粉 · 银色高光 · 未来复古</p>
+    </section>
+
+    <!-- Usage -->
+    <section class="max-w-3xl mx-auto mb-12">
+        <div class="y2k-card p-8">
+            <h2 class="font-bold text-lg mb-1" style="color:#9400D3">Claude Code 使用指南</h2>
+            <p class="text-sm text-gray-400 mb-6">输入命令生成千禧风页面</p>
+            <div class="space-y-3">
+                <div class="y2k-pill px-5 py-3"><code class="text-sm">/ui-ux-pro-max 用 Y2K 千禧风格，生成一个时尚品牌官网</code></div>
+                <div class="y2k-pill px-5 py-3"><code class="text-sm">/ui-ux-pro-max 用千禧风格，做一个 Gen Z 社交产品 Landing</code></div>
+                <div class="y2k-pill px-5 py-3"><code class="text-sm">/ui-ux-pro-max Y2K aesthetic, create a fashion e-commerce page</code></div>
+                <div class="y2k-pill px-5 py-3"><code class="text-sm">/ui-ux-pro-max 用 Y2K + 银色主题，生成一个音乐人主页</code></div>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+                <span class="y2k-pill px-3 py-1 text-xs font-medium text-[#9400D3]">时尚品牌</span>
+                <span class="y2k-pill px-3 py-1 text-xs font-medium text-[#FF69B4]">Gen Z 营销</span>
+                <span class="y2k-pill px-3 py-1 text-xs font-medium text-[#9400D3]">音乐</span>
+                <span class="y2k-pill px-3 py-1 text-xs font-medium text-[#FF69B4]">娱乐</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div class="y2k-card p-6 text-center glossy">
+            <div class="w-14 h-14 y2k-btn rounded-full mx-auto flex items-center justify-center mb-4 glossy"><span class="text-white text-xl">✦</span></div>
+            <h3 class="font-bold mb-1">虚拟试衣</h3>
+            <p class="text-xs text-gray-500">AR 技术即时预览穿搭效果</p>
+        </div>
+        <div class="y2k-card p-6 text-center glossy">
+            <div class="w-14 h-14 rounded-full mx-auto flex items-center justify-center mb-4 glossy" style="background:linear-gradient(180deg,#00FFFF,#9400D3)"><span class="text-white text-xl">◈</span></div>
+            <h3 class="font-bold mb-1">限定发售</h3>
+            <p class="text-xs text-gray-500">千禧联名款，手快有手慢无</p>
+        </div>
+        <div class="y2k-card p-6 text-center glossy">
+            <div class="w-14 h-14 rounded-full mx-auto flex items-center justify-center mb-4 glossy" style="background:linear-gradient(180deg,#FF69B4,#FF0080)"><span class="text-white text-xl">♡</span></div>
+            <h3 class="font-bold mb-1">社区互动</h3>
+            <p class="text-xs text-gray-500">分享你的 OOTD，被全世界看见</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Cinematic 风格 - 暗黑电影感</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{deep:'#020203',accent:'#5E6AD2'}}}}</script>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glow-accent { box-shadow: 0 0 30px rgba(94,106,210,0.3); }
+        .glow-text { text-shadow: 0 0 20px rgba(94,106,210,0.5); }
+        .glass-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); backdrop-filter: blur(10px); border-radius: 16px; }
+        .blob-bg { position: absolute; border-radius: 50%; filter: blur(100px); pointer-events: none; }
+        @keyframes pulse-slow { 0%,100%{opacity:0.6} 50%{opacity:1} }
+        .pulse-dot { animation: pulse-slow 2s ease-in-out infinite; }
+        @media(prefers-reduced-motion:reduce){.pulse-dot{animation:none;opacity:0.8}}
+    </style>
+</head>
+<body class="bg-deep text-white min-h-screen overflow-x-hidden relative">
+    <div class="blob-bg w-[500px] h-[500px] bg-accent/10 top-0 left-1/4"></div>
+    <div class="blob-bg w-[400px] h-[400px] bg-purple-900/10 bottom-1/4 right-0"></div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deep/80 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-accent pulse-dot"></div><span class="font-semibold text-sm">Quantum</span></div>
+            <button class="px-4 py-2 bg-accent/10 text-accent text-sm font-medium rounded-lg border border-accent/20 hover:bg-accent/20 transition cursor-pointer">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative z-10 pt-32 pb-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+                Dark Cinematic<br><span class="text-accent glow-text">暗黑电影感</span>
+            </h1>
+            <p class="mt-6 text-lg text-white/40 max-w-xl mx-auto">深黑底色 · 氛围光晕 · 代码终端 · 渐变强调色</p>
+        </div>
+    </section>
+
+    <!-- Usage Guide - 融入暗黑风格 -->
+    <section class="relative z-10 px-6 pb-16">
+        <div class="max-w-2xl mx-auto glass-card p-8">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                <div class="w-3 h-3 rounded-full bg-white/10"></div>
+                <span class="ml-auto mono text-xs text-white/30">claude-code</span>
+            </div>
+            <pre class="mono text-sm leading-loose text-white/70"><span class="text-green-400">$</span> <span class="text-white/90">/ui-ux-pro-max 用 Dark Cinematic 风格，生成一个 AI 产品官网</span>
+
+<span class="text-green-400">$</span> <span class="text-white/90">/ui-ux-pro-max 用暗黑电影感风格，做一个开发者工具 Landing Page</span>
+
+<span class="text-green-400">$</span> <span class="text-white/90">/ui-ux-pro-max Dark Cinematic style, create a crypto dashboard</span>
+
+<span class="text-green-400">$</span> <span class="text-white/90">/ui-ux-pro-max 用 Dark Cinematic 风格，生成一个 API 文档首页</span>
+
+<span class="text-accent">⚡ Scenes:</span> <span class="text-white/40">AI 产品 · 开发者工具 · 加密交易所 · API 平台 · 游戏官网</span></pre>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="relative z-10 px-6 pb-24">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-4">
+            <div class="glass-card p-8 hover:bg-white/[0.04] transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6"><svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></div>
+                <h3 class="font-semibold mb-2">闪电推理</h3>
+                <p class="text-sm text-white/40">P99 延迟 &lt; 50ms，自动 GPU 编排。</p>
+                <div class="mt-4 mono text-xs text-white/20">latency: 12ms avg</div>
+            </div>
+            <div class="glass-card p-8 hover:bg-white/[0.04] transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6"><svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg></div>
+                <h3 class="font-semibold mb-2">全球边缘网络</h3>
+                <p class="text-sm text-white/40">30+ 边缘节点，智能路由。</p>
+                <div class="mt-4 mono text-xs text-white/20">regions: 32 active</div>
+            </div>
+            <div class="glass-card p-8 hover:bg-white/[0.04] transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6"><svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+                <h3 class="font-semibold mb-2">企业级安全</h3>
+                <p class="text-sm text-white/40">SOC2 Type II、HIPAA 合规。</p>
+                <div class="mt-4 mono text-xs text-white/20">compliance: soc2</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

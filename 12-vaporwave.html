@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaporwave 风格 - 蒸汽波</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #0a0020 0%, #1a0533 40%, #2d1b69 100%); color: #fff; min-height: 100vh; overflow-x: hidden; }
+        h1, h2, h3, .display { font-family: 'Orbitron', sans-serif; }
+        .neon-pink { color: #FF71CE; text-shadow: 0 0 10px #FF71CE, 0 0 20px #FF71CE, 0 0 40px #FF71CE; }
+        .neon-cyan { color: #01CDFE; text-shadow: 0 0 10px #01CDFE, 0 0 20px #01CDFE; }
+        .neon-mint { color: #05FFA1; text-shadow: 0 0 8px #05FFA1; }
+        .grid-floor {
+            position: relative; overflow: hidden;
+        }
+        .grid-floor::after {
+            content: ''; position: absolute; bottom: 0; left: -50%; right: -50%; height: 200px;
+            background: linear-gradient(180deg, transparent 0%, rgba(1,205,254,0.05) 100%),
+                        repeating-linear-gradient(90deg, rgba(1,205,254,0.15) 0px, transparent 1px, transparent 60px),
+                        repeating-linear-gradient(0deg, rgba(1,205,254,0.1) 0px, transparent 1px, transparent 40px);
+            transform: perspective(400px) rotateX(60deg); transform-origin: bottom;
+        }
+        .vapor-card {
+            background: rgba(185, 103, 255, 0.08);
+            border: 1px solid rgba(255,113,206,0.2);
+            border-radius: 4px;
+            backdrop-filter: blur(4px);
+        }
+        .scan-line { background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,113,206,0.03) 3px, rgba(255,113,206,0.03) 4px); position: fixed; inset: 0; pointer-events: none; z-index: 100; }
+        @keyframes glow-pulse { 0%,100%{opacity:0.7} 50%{opacity:1} }
+        .glow-anim { animation: glow-pulse 3s ease-in-out infinite; }
+        @media(prefers-reduced-motion:reduce){.glow-anim{animation:none;opacity:1}}
+    </style>
+</head>
+<body class="grid-floor">
+    <div class="scan-line"></div>
+
+    <!-- Nav -->
+    <nav class="px-6 py-5 relative z-10">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <span class="display text-sm neon-pink glow-anim">VAPOR.FM</span>
+            <div class="hidden md:flex gap-6 text-xs uppercase tracking-widest text-white/40">
+                <a href="#" class="hover:text-[#01CDFE] transition cursor-pointer">Listen</a>
+                <a href="#" class="hover:text-[#01CDFE] transition cursor-pointer">Explore</a>
+                <a href="#" class="hover:text-[#01CDFE] transition cursor-pointer">Create</a>
+            </div>
+            <button class="px-4 py-1.5 border border-[#FF71CE]/40 text-[#FF71CE] text-xs uppercase tracking-wider hover:bg-[#FF71CE]/10 transition cursor-pointer">Enter</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative z-10 px-6 pt-16 pb-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-black uppercase leading-tight">
+            <span class="neon-pink glow-anim">Vapor</span><span class="neon-cyan">wave</span>
+        </h1>
+        <p class="mt-4 text-lg text-white/40 font-light">蒸汽波 · 粉紫渐变 · 网格地面 · 日落色 · 复古未来主义</p>
+        <p class="mt-2 text-sm neon-mint">A E S T H E T I C S</p>
+    </section>
+
+    <!-- Usage Guide -->
+    <section class="relative z-10 px-6 pb-12">
+        <div class="max-w-3xl mx-auto vapor-card p-8">
+            <h2 class="display text-sm neon-cyan mb-1">CLAUDE CODE 使用指南</h2>
+            <p class="text-xs text-white/30 mb-6 font-light">输入以下命令进入蒸汽波世界</p>
+            <div class="space-y-3">
+                <div class="px-4 py-3 border border-[#B967FF]/20 bg-[#B967FF]/5 rounded"><code class="text-sm text-[#FF71CE]">/ui-ux-pro-max 用 Vaporwave 蒸汽波风格，生成一个音乐平台首页</code></div>
+                <div class="px-4 py-3 border border-[#B967FF]/20 bg-[#B967FF]/5 rounded"><code class="text-sm text-[#01CDFE]">/ui-ux-pro-max 用蒸汽波风格，做一个复古游戏合集页</code></div>
+                <div class="px-4 py-3 border border-[#B967FF]/20 bg-[#B967FF]/5 rounded"><code class="text-sm text-[#05FFA1]">/ui-ux-pro-max Vaporwave style, create a retro-future portfolio</code></div>
+                <div class="px-4 py-3 border border-[#B967FF]/20 bg-[#B967FF]/5 rounded"><code class="text-sm text-[#B967FF]">/ui-ux-pro-max 用蒸汽波 + synthwave，生成 DJ 个人主页</code></div>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-[10px] uppercase tracking-wider border border-[#FF71CE]/30 text-[#FF71CE]/70">音乐平台</span>
+                <span class="px-3 py-1 text-[10px] uppercase tracking-wider border border-[#01CDFE]/30 text-[#01CDFE]/70">游戏</span>
+                <span class="px-3 py-1 text-[10px] uppercase tracking-wider border border-[#05FFA1]/30 text-[#05FFA1]/70">作品集</span>
+                <span class="px-3 py-1 text-[10px] uppercase tracking-wider border border-[#B967FF]/30 text-[#B967FF]/70">科技初创</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="relative z-10 px-6 pb-20">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="vapor-card p-6 text-center">
+                <div class="text-3xl mb-3 neon-pink glow-anim">♫</div>
+                <h3 class="display text-xs uppercase tracking-wider neon-cyan mb-2">无限电台</h3>
+                <p class="text-xs text-white/40 font-light">7x24 Lo-Fi 电台，沉浸在永远的黄昏里。</p>
+            </div>
+            <div class="vapor-card p-6 text-center">
+                <div class="text-3xl mb-3 neon-cyan">◇</div>
+                <h3 class="display text-xs uppercase tracking-wider neon-pink mb-2">视觉合成</h3>
+                <p class="text-xs text-white/40 font-light">AI 生成蒸汽波视觉，配合你的每一首曲子。</p>
+            </div>
+            <div class="vapor-card p-6 text-center">
+                <div class="text-3xl mb-3 neon-mint">△</div>
+                <h3 class="display text-xs uppercase tracking-wider text-[#B967FF] mb-2">时空回廊</h3>
+                <p class="text-xs text-white/40 font-light">回到 80 年代东京夜晚，永不结束的日落。</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

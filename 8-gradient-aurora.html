@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Aurora 风格 - 极光渐变</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Outfit', sans-serif; }
+        .aurora-bg { background: linear-gradient(135deg, #0c0a3e 0%, #1a1a6c 25%, #4a0072 50%, #0c0a3e 100%); }
+        @keyframes aurora { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        .aurora-btn { background: linear-gradient(270deg, #00d2ff, #a855f7, #ec4899, #06b6d4, #00d2ff); background-size: 400% 400%; animation: aurora 8s ease infinite; }
+        .aurora-text { background: linear-gradient(90deg, #06b6d4, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card-g { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(10px); border-radius: 20px; }
+        @media(prefers-reduced-motion:reduce){.aurora-btn{animation:none;background-position:0% 50%}}
+    </style>
+</head>
+<body class="aurora-bg min-h-screen text-white overflow-x-hidden">
+
+    <nav class="px-6 py-5">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <span class="text-xl font-bold aurora-text">Lumina</span>
+            <button class="px-5 py-2 rounded-full text-sm font-medium aurora-btn text-white cursor-pointer">Join Waitlist</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="px-6 pt-16 pb-12 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                Gradient Aurora<br><span class="aurora-text">极光渐变</span>
+            </h1>
+            <p class="mt-6 text-lg text-white/40 max-w-xl mx-auto">极光渐变 · 深邃宇宙 · 流光色彩 · 梦幻感</p>
+            <button class="mt-10 px-10 py-4 rounded-full font-semibold text-lg aurora-btn text-white shadow-lg shadow-purple-500/20 cursor-pointer">开启创作之旅</button>
+        </div>
+    </section>
+
+    <!-- Usage Guide - 极光渐变风格 -->
+    <section class="px-6 pb-16">
+        <div class="max-w-3xl mx-auto card-g p-10">
+            <h2 class="text-xl font-bold mb-2">Claude Code 使用指南</h2>
+            <p class="text-white/40 text-sm mb-8">输入命令生成极光风格页面</p>
+            <div class="space-y-3">
+                <div class="px-5 py-3 rounded-xl bg-white/5 border border-white/10"><code class="text-sm text-white/80">/ui-ux-pro-max 用 Aurora 极光风格，生成一个 AI 创意平台首页</code></div>
+                <div class="px-5 py-3 rounded-xl bg-white/5 border border-white/10"><code class="text-sm text-white/80">/ui-ux-pro-max 用极光渐变风格，做一个音乐流媒体 Landing Page</code></div>
+                <div class="px-5 py-3 rounded-xl bg-white/5 border border-white/10"><code class="text-sm text-white/80">/ui-ux-pro-max Aurora style, create a metaverse platform page</code></div>
+                <div class="px-5 py-3 rounded-xl bg-white/5 border border-white/10"><code class="text-sm text-white/80">/ui-ux-pro-max 用 Aurora 风格，生成一个产品发布预热页</code></div>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/60">AI 创意平台</span>
+                <span class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/60">音乐流媒体</span>
+                <span class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/60">元宇宙入口</span>
+                <span class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/60">Waitlist</span>
+                <span class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/60">NFT 展览</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="px-6 pb-24">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="card-g p-8">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/></svg></div>
+                <h3 class="text-xl font-semibold mb-3">图像生成</h3>
+                <p class="text-white/40 text-sm">文字到画作，秒级出图。</p>
+            </div>
+            <div class="card-g p-8">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0118 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125"/></svg></div>
+                <h3 class="text-xl font-semibold mb-3">视频合成</h3>
+                <p class="text-white/40 text-sm">文字生成电影级视频。</p>
+            </div>
+            <div class="card-g p-8">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-orange-400 flex items-center justify-center mb-6"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/></svg></div>
+                <h3 class="text-xl font-semibold mb-3">音乐创作</h3>
+                <p class="text-white/40 text-sm">哼一段旋律，AI 全程编曲。</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

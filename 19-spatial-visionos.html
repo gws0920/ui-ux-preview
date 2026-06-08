@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial UI 风格 - 空间计算</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%); color: #fff; min-height: 100vh; }
+        .spatial-glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(40px) saturate(180%); -webkit-backdrop-filter: blur(40px) saturate(180%); border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; box-shadow: 0 8px 32px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.05); }
+        .spatial-float { transform: translateZ(0); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .spatial-float:hover { transform: scale(1.02) translateY(-2px); box-shadow: 0 16px 48px rgba(0,0,0,0.3); }
+        .spatial-btn { background: rgba(100,181,246,0.15); border: 1px solid rgba(100,181,246,0.3); border-radius: 16px; backdrop-filter: blur(10px); }
+        .spatial-input { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; }
+    </style>
+</head>
+<body class="p-6 md:p-10">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between mb-12">
+        <span class="text-lg font-semibold text-white/90">Vision</span>
+        <button class="spatial-btn px-5 py-2 text-[#64B5F6] text-sm font-medium cursor-pointer hover:bg-[#64B5F6]/20 transition">进入空间</button>
+    </nav>
+
+    <section class="max-w-4xl mx-auto text-center mb-12">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Spatial <span class="text-[#64B5F6]">UI</span>
+        </h1>
+        <p class="mt-4 text-lg text-white/40 font-light">空间计算 · VisionOS 磨砂玻璃 · 深度层次 · 大圆角 · 悬浮窗口</p>
+    </section>
+
+    <section class="max-w-3xl mx-auto mb-12">
+        <div class="spatial-glass spatial-float p-10">
+            <h2 class="text-xl font-semibold mb-1 text-white/90">Claude Code 使用指南</h2>
+            <p class="text-sm text-white/30 mb-8 font-light">输入命令生成空间计算风格页面</p>
+            <div class="space-y-3">
+                <div class="spatial-input px-5 py-3"><code class="text-sm text-white/70">/ui-ux-pro-max 用 Spatial UI 空间计算风格，生成 VR 产品首页</code></div>
+                <div class="spatial-input px-5 py-3"><code class="text-sm text-white/70">/ui-ux-pro-max 用 VisionOS 风格，做一个未来仪表盘</code></div>
+                <div class="spatial-input px-5 py-3"><code class="text-sm text-white/70">/ui-ux-pro-max Spatial UI style, create an AR showcase page</code></div>
+                <div class="spatial-input px-5 py-3"><code class="text-sm text-white/70">/ui-ux-pro-max 用空间计算 + 磨砂玻璃，生成沉浸式产品演示页</code></div>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-2">
+                <span class="spatial-btn px-3 py-1 text-xs text-[#64B5F6]">VR/AR</span>
+                <span class="spatial-btn px-3 py-1 text-xs text-[#64B5F6]">空间计算</span>
+                <span class="spatial-btn px-3 py-1 text-xs text-[#64B5F6]">沉浸媒体</span>
+                <span class="spatial-btn px-3 py-1 text-xs text-[#64B5F6]">未来仪表盘</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
+        <div class="spatial-glass spatial-float p-6 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-[#64B5F6]/10 mx-auto flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#64B5F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <h3 class="font-semibold mb-1 text-white/90">空间感知</h3>
+            <p class="text-xs text-white/40 font-light">环境自适应 UI</p>
+        </div>
+        <div class="spatial-glass spatial-float p-6 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-[#64B5F6]/10 mx-auto flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#64B5F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg></div>
+            <h3 class="font-semibold mb-1 text-white/90">多层深度</h3>
+            <p class="text-xs text-white/40 font-light">Z 轴窗口管理</p>
+        </div>
+        <div class="spatial-glass spatial-float p-6 text-center">
+            <div class="w-12 h-12 rounded-2xl bg-[#64B5F6]/10 mx-auto flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#64B5F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg></div>
+            <h3 class="font-semibold mb-1 text-white/90">手势交互</h3>
+            <p class="text-xs text-white/40 font-light">自然手势操控</p>
+        </div>
+    </section>
+</body>
+</html>

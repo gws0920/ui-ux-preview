@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 风格 - 赛博朋克</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'JetBrains Mono', monospace; background: #0A0A0F; color: #E0E0E0; min-height: 100vh; }
+        h1, h2, h3 { font-family: 'Orbitron', sans-serif; }
+        .neon-green { color: #00FF88; text-shadow: 0 0 8px #00FF88, 0 0 16px #00FF88; }
+        .neon-pink { color: #FF00FF; text-shadow: 0 0 8px #FF00FF; }
+        .neon-blue { color: #00D4FF; text-shadow: 0 0 6px #00D4FF; }
+        .cyber-card { background: #12121A; border: 1px solid #2A2A3A; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px)); }
+        .cyber-btn { background: transparent; border: 2px solid #00FF88; color: #00FF88; clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); transition: all 0.15s; }
+        .cyber-btn:hover { background: #00FF88; color: #0A0A0F; box-shadow: 0 0 20px #00FF88; }
+        .hud-corner { position: relative; }
+        .hud-corner::before, .hud-corner::after { content: ''; position: absolute; width: 12px; height: 12px; border-color: #00FF88; border-style: solid; }
+        .hud-corner::before { top: 0; left: 0; border-width: 2px 0 0 2px; }
+        .hud-corner::after { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+        @keyframes glitch { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-2px)} 40%{transform:translateX(2px)} 60%{transform:translateX(-1px)} 80%{transform:translateX(1px)} }
+        .glitch:hover { animation: glitch 0.3s ease; }
+        @media(prefers-reduced-motion:reduce){.glitch:hover{animation:none}}
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <nav class="max-w-5xl mx-auto flex items-center justify-between mb-10 border-b border-[#2A2A3A] pb-4">
+        <span class="text-sm font-bold neon-green">NEOCORP://</span>
+        <div class="flex gap-4">
+            <span class="text-xs text-[#00D4FF]/50">SYS.STATUS: <span class="neon-blue">ACTIVE</span></span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto text-center mb-10">
+        <h1 class="text-4xl md:text-6xl font-black uppercase glitch">
+            <span class="neon-green">Cyber</span><span class="neon-pink">punk</span>
+        </h1>
+        <p class="mt-4 text-sm text-[#E0E0E0]/40">赛博朋克 · 霓虹荧光 · 深黑底 · 故障效果 · 切角 · HUD 元素</p>
+    </section>
+
+    <!-- Usage -->
+    <section class="max-w-3xl mx-auto mb-12">
+        <div class="cyber-card p-8">
+            <div class="hud-corner p-4">
+                <h2 class="text-xs uppercase tracking-wider neon-blue mb-4">// CLAUDE_CODE.USAGE</h2>
+                <div class="space-y-2">
+                    <div class="border-l-2 border-[#00FF88] pl-4 py-1"><code class="text-xs text-[#00FF88]">&gt; /ui-ux-pro-max 用 Cyberpunk 赛博朋克风格，生成游戏数据面板</code></div>
+                    <div class="border-l-2 border-[#FF00FF] pl-4 py-1"><code class="text-xs text-[#FF00FF]">&gt; /ui-ux-pro-max 用赛博朋克风格，做一个加密钱包界面</code></div>
+                    <div class="border-l-2 border-[#00D4FF] pl-4 py-1"><code class="text-xs text-[#00D4FF]">&gt; /ui-ux-pro-max Cyberpunk style, create a sci-fi game landing</code></div>
+                    <div class="border-l-2 border-[#00FF88] pl-4 py-1"><code class="text-xs text-[#00FF88]">&gt; /ui-ux-pro-max 用赛博朋克 + HUD 元素，生成监控仪表盘</code></div>
+                </div>
+                <div class="mt-6 text-xs text-[#E0E0E0]/30">
+                    SCENES: <span class="text-[#00FF88]">游戏仪表盘</span> | <span class="text-[#FF00FF]">加密货币</span> | <span class="text-[#00D4FF]">黑客工具</span> | <span class="neon-green">科幻</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="max-w-5xl mx-auto grid md:grid-cols-3 gap-4 mb-10">
+        <div class="cyber-card p-6">
+            <div class="text-xs text-[#00FF88]/50 mb-3">MODULE_01</div>
+            <h3 class="text-sm font-bold neon-green mb-2">NEURAL LINK</h3>
+            <p class="text-xs text-[#E0E0E0]/40">脑机接口实时数据流，延迟 < 1ms。</p>
+            <div class="mt-4 h-1 bg-[#2A2A3A] rounded"><div class="h-full w-4/5 bg-[#00FF88] rounded"></div></div>
+        </div>
+        <div class="cyber-card p-6">
+            <div class="text-xs text-[#FF00FF]/50 mb-3">MODULE_02</div>
+            <h3 class="text-sm font-bold neon-pink mb-2">CRYPTO VAULT</h3>
+            <p class="text-xs text-[#E0E0E0]/40">量子加密资产保险库，零知识证明。</p>
+            <div class="mt-4 h-1 bg-[#2A2A3A] rounded"><div class="h-full w-3/5 bg-[#FF00FF] rounded"></div></div>
+        </div>
+        <div class="cyber-card p-6">
+            <div class="text-xs text-[#00D4FF]/50 mb-3">MODULE_03</div>
+            <h3 class="text-sm font-bold neon-blue mb-2">GHOST NET</h3>
+            <p class="text-xs text-[#E0E0E0]/40">隐匿通信协议，全球暗网节点覆盖。</p>
+            <div class="mt-4 h-1 bg-[#2A2A3A] rounded"><div class="h-full w-[90%] bg-[#00D4FF] rounded"></div></div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto text-center text-xs text-[#E0E0E0]/20 border-t border-[#2A2A3A] pt-4">
+        NEOCORP © 2077 | ALL SYSTEMS NOMINAL
+    </footer>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 风格预览画廊 — 30 种设计风格</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .card-link { transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-link:hover { transform: translateY(-4px); box-shadow: 0 16px 32px -8px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body class="bg-gray-950 min-h-screen text-white">
+
+    <header class="px-6 pt-14 pb-10 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">UI 风格预览画廊</h1>
+        <p class="mt-4 text-lg text-gray-400">30 种风格 · 点击卡片预览 · 每页含 Claude Code 使用命令</p>
+        <div class="mt-4 inline-block px-4 py-2 bg-gray-800/50 rounded-xl border border-gray-700">
+            <code class="text-sm text-gray-300">/ui-ux-pro-max 用 [风格名] 风格，生成 [页面描述]</code>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 pb-20">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+            <a href="1-glassmorphism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-gradient-to-br from-purple-600 via-violet-500 to-pink-400 relative overflow-hidden">
+                    <div class="absolute top-3 right-3 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm border border-white/20"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Glassmorphism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">毛玻璃 · 渐变背景 · 光斑</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：SaaS · 金融 · 云服务 · 高端产品</p>
+                </div>
+            </a>
+
+            <a href="2-neo-brutalism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#FFFDF5] relative overflow-hidden p-3">
+                    <div class="absolute top-3 right-3 w-12 h-9 bg-[#FFD93D] border-[2px] border-black" style="box-shadow:3px 3px 0 #000;transform:rotate(2deg)"></div>
+                    <div class="absolute bottom-3 left-3 w-10 h-10 bg-[#FF6B6B] border-[2px] border-black" style="box-shadow:3px 3px 0 #000"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Neo Brutalism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">粗边框 · 硬阴影 · 高饱和</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：创意工作室 · 潮牌 · 教育 · Gen Z</p>
+                </div>
+            </a>
+
+            <a href="3-minimalism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-white flex items-end justify-end p-4">
+                    <div class="text-4xl font-black text-black tracking-tighter">Aa.</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Exaggerated Minimalism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">巨型字体 · 极致留白 · 纯黑白</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：时尚 · 建筑 · 作品集 · 律所</p>
+                </div>
+            </a>
+
+            <a href="4-dark-cinematic.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#020203] relative overflow-hidden flex items-center justify-center">
+                    <div class="absolute w-24 h-24 rounded-full bg-[#5E6AD2]/20 blur-2xl"></div>
+                    <span class="relative font-mono text-xs text-[#5E6AD2]/70">$ deploy ▌</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Dark Cinematic</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">深黑 · 光晕 · 终端 · 渐变</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：AI 产品 · DevTool · 加密 · 游戏</p>
+                </div>
+            </a>
+
+            <a href="5-neumorphism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:#E0E5EC">
+                    <div class="w-14 h-14 rounded-full" style="background:#E0E5EC;box-shadow:4px 4px 8px rgba(163,177,198,0.6),-4px -4px 8px rgba(255,255,255,0.8)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Neumorphism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">柔和凸起 · 双层阴影 · 单色调</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：健康 · 智能家居 · 冥想 · 播放器</p>
+                </div>
+            </a>
+
+            <a href="6-bento-grid.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#f5f5f7] p-2">
+                    <div class="grid grid-cols-3 grid-rows-2 gap-1 h-full">
+                        <div class="col-span-2 row-span-2 bg-violet-500 rounded-md"></div>
+                        <div class="bg-white rounded-md border border-gray-200"></div>
+                        <div class="bg-gray-900 rounded-md"></div>
+                    </div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Bento Grid</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">不规则网格 · Apple 风 · 圆角</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：产品展示 · SaaS · 年报 · 简历</p>
+                </div>
+            </a>
+
+            <a href="7-terminal-hacker.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#050505] p-4 font-mono flex flex-col justify-between">
+                    <div class="text-[9px] text-[#33FF00]/50">root@nexus ~ $</div>
+                    <div class="text-[10px] text-[#33FF00]">ACCESS GRANTED</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Terminal / Hacker</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">Matrix 绿 · ASCII · CRT</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：安全 · Web3 · 极客 · DevOps</p>
+                </div>
+            </a>
+
+            <a href="8-gradient-aurora.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-gradient-to-br from-[#0c0a3e] via-[#4a0072] to-[#1a1a6c] relative overflow-hidden flex items-center justify-center">
+                    <div class="absolute w-32 h-12 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 opacity-40 blur-xl"></div>
+                    <span class="relative text-sm bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent font-bold">Aurora</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Gradient Aurora</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">极光 · 宇宙 · 流光 · 梦幻</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：AI 创意 · 音乐 · 元宇宙 · NFT</p>
+                </div>
+            </a>
+
+            <a href="9-editorial-magazine.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#FDFCF9] flex items-end p-4">
+                    <div class="text-2xl font-bold italic text-gray-900" style="font-family:serif">Slow Living</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Editorial / Magazine</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">衬线 · 杂志排版 · 优雅留白</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：媒体 · 奢侈品 · 摄影 · 文化</p>
+                </div>
+            </a>
+
+            <a href="10-retro-pixel.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#1a1c2c] flex items-center justify-center">
+                    <span class="text-[#e83b3b] text-3xl">♥</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Retro Pixel</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">像素字体 · 8-bit · 街机 · 星空</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：独立游戏 · Game Jam · 怀旧</p>
+                </div>
+            </a>
+
+            <a href="11-claymorphism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:#F4F1FA">
+                    <div class="w-14 h-14 rounded-[50%] bg-[#7C3AED] opacity-70" style="box-shadow:0 8px 24px rgba(124,58,237,0.3)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Claymorphism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">3D 膨胀 · 糖果色 · 高圆角</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：儿童教育 · 社交 · 游戏化 · 创意</p>
+                </div>
+            </a>
+
+            <a href="12-vaporwave.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:linear-gradient(180deg,#1a0533,#2d1b69)">
+                    <span class="text-2xl font-bold" style="color:#FF71CE;text-shadow:0 0 10px #FF71CE">VAPOR</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Vaporwave</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">粉紫 · 网格地面 · 日落 · 复古未来</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：音乐 · 游戏 · 作品集 · 初创</p>
+                </div>
+            </a>
+
+            <a href="13-y2k.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:#f0e6ff">
+                    <span class="text-3xl font-bold" style="background:linear-gradient(180deg,#FF69B4,#C0C0C0);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Y2K</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Y2K Aesthetic</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">金属渐变 · 透明塑料 · 霓虹粉</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：时尚 · Gen Z · 音乐 · 娱乐</p>
+                </div>
+            </a>
+
+            <a href="14-cyberpunk.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#0A0A0F] flex items-center justify-center">
+                    <span class="text-xl font-bold" style="color:#00FF88;text-shadow:0 0 8px #00FF88">CYBER</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Cyberpunk</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">霓虹 · 深黑 · 故障 · HUD</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：游戏 · 加密 · 黑客 · 科幻</p>
+                </div>
+            </a>
+
+            <a href="15-skeuomorphism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:linear-gradient(145deg,#f5f0e8,#ddd5c5)">
+                    <div class="w-14 h-14 rounded-xl" style="background:linear-gradient(145deg,#e8ddd0,#c8b8a0);box-shadow:2px 2px 6px rgba(0,0,0,0.2),inset 1px 1px 2px rgba(255,255,255,0.5)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Skeuomorphism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">真实材质 · 多层渐变 · 光影</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：游戏 · 高端产品 · 教育 · 沉浸</p>
+                </div>
+            </a>
+
+            <a href="16-bauhaus.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#F0F0F0] flex items-center justify-center gap-3 p-4">
+                    <div class="w-10 h-10 bg-[#D02020]"></div>
+                    <div class="w-10 h-10 rounded-full bg-[#1040C0]"></div>
+                    <div class="w-10 h-10 bg-[#F0C020]" style="clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Bauhaus</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">三原色 · 几何 · 网格 · 功能美学</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：设计院校 · 建筑 · 艺术展 · 品牌</p>
+                </div>
+            </a>
+
+            <a href="17-memphis.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#FFF8E1] flex items-center justify-center gap-2 p-4">
+                    <div class="w-8 h-8 rounded-full bg-[#FF71CE]"></div>
+                    <div class="w-8 h-8 bg-[#FFCE5C]" style="transform:rotate(15deg)"></div>
+                    <div class="w-8 h-8 bg-[#86CCCA]" style="clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Memphis Design</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">几何图案 · 不协调配色 · 后现代</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：创意机构 · 音乐 · 青年 · 活动</p>
+                </div>
+            </a>
+
+            <a href="18-organic-biophilic.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#F5F0E1] flex items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-[#228B22]/20 flex items-center justify-center"><span class="text-2xl">🌿</span></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Organic Biophilic</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">自然绿 · 大地色 · 有机曲线</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：健康 · 可持续 · 有机食品 · 水疗</p>
+                </div>
+            </a>
+
+            <a href="19-spatial-visionos.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 flex items-center justify-center" style="background:linear-gradient(180deg,#1a1a2e,#0f0f1a)">
+                    <div class="w-20 h-12 rounded-2xl" style="background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Spatial UI (VisionOS)</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">深度磨砂 · 悬浮 · 大圆角</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：VR/AR · 空间计算 · 未来仪表盘</p>
+                </div>
+            </a>
+
+            <a href="20-e-ink-paper.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#FDFBF7] flex items-center justify-center p-4">
+                    <div class="text-lg text-[#1A1A1A]" style="font-family:Georgia">The quick brown fox...</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">E-Ink / Paper</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">纸质纹理 · 无动效 · 极静</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：阅读 · 报纸 · 写作工具 · 慢生活</p>
+                </div>
+            </a>
+
+            <a href="21-swiss-modernism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-white flex items-center justify-center p-4">
+                    <div class="w-full h-full border-2 border-black grid grid-cols-4 grid-rows-2 gap-px"><div class="bg-[#FF0000]"></div><div></div><div></div><div></div><div></div><div></div><div class="bg-black"></div><div></div></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Swiss Modernism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">严格网格 · 无衬线 · 功能至上</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：企业 · 博物馆 · 文档 · 专业服务</p>
+                </div>
+            </a>
+
+            <a href="22-vintage-film.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#F5E6C8] flex items-center justify-center">
+                    <div class="text-2xl italic" style="font-family:serif;color:#4A7B7C">Vintage</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Vintage Film</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">褪色暖调 · 胶片颗粒 · 漏光</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：摄影 · 黑胶 · 复古时尚 · 咖啡馆</p>
+                </div>
+            </a>
+
+            <a href="23-gen-z-maximalism.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-black flex items-center justify-center gap-1">
+                    <span class="text-xl font-bold text-[#FF00FF]">MAX</span>
+                    <span class="text-xl font-bold text-[#00FF00]">IM</span>
+                    <span class="text-xl font-bold text-[#FFFF00]">AL</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Gen Z Maximalism</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">色彩冲撞 · 满屏 · 反设计</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：Z世代 · 音乐人 · 病毒营销 · 时尚</p>
+                </div>
+            </a>
+
+            <a href="24-chromatic-aberration.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-black flex items-center justify-center relative">
+                    <span class="absolute text-2xl font-black" style="color:#FF0000;left:calc(50% - 2px);transform:translateX(-50%)">RGB</span>
+                    <span class="absolute text-2xl font-black" style="color:#0000FF;left:calc(50% + 2px);transform:translateX(-50%)">RGB</span>
+                    <span class="absolute text-2xl font-black text-white" style="transform:translateX(-50%);left:50%;mix-blend-mode:screen">RGB</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Chromatic Aberration</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">RGB 偏移 · 故障艺术 · 视觉冲击</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：音乐 · 游戏 · 科技 · 夜店</p>
+                </div>
+            </a>
+
+            <a href="25-nature-distilled.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#F5F0E1] flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#C67B5C]"></div>
+                    <div class="w-10 h-10 rounded-full bg-[#D4C4A8]"></div>
+                    <div class="w-10 h-10 rounded-full bg-[#6B7B3C]"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Nature Distilled</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">陶土 · 沙米 · 手工感 · 温暖</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：手工品牌 · 护肤 · 家居 · 陶艺</p>
+                </div>
+            </a>
+
+            <a href="26-ai-native.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#FAFAFA] flex items-center justify-center p-4">
+                    <div class="w-full max-w-[160px] h-8 rounded-full bg-[#6366F1]/10 border border-[#6366F1]/20 flex items-center px-3"><span class="text-[10px] text-[#6366F1]">Ask AI anything...</span><div class="ml-auto w-4 h-4 rounded-full bg-[#6366F1]"></div></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">AI-Native UI</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">对话式 · 紫色 · 流式 · 智能感</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：AI 产品 · 聊天 · 语音助手 · Copilot</p>
+                </div>
+            </a>
+
+            <a href="27-kinetic-typography.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-black flex items-center justify-center">
+                    <span class="text-3xl font-black text-white tracking-tighter">MOVE.</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Kinetic Typography</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">文字即画面 · 超大 · 滚动驱动</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：Hero · 营销 · 视频平台 · 叙事</p>
+                </div>
+            </a>
+
+            <a href="28-flat-design.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-white flex items-center justify-center gap-2 p-4">
+                    <div class="w-10 h-10 bg-[#3B82F6] rounded"></div>
+                    <div class="w-10 h-10 bg-[#10B981] rounded"></div>
+                    <div class="w-10 h-10 bg-[#F59E0B] rounded"></div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Flat Design</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">零阴影 · 色块 · 几何图标 · 直接</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：跨平台 · 仪表盘 · MVP · 引导页</p>
+                </div>
+            </a>
+
+            <a href="29-trust-authority.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#F8FAFC] flex items-center justify-center p-4">
+                    <div class="px-4 py-2 rounded-lg bg-[#1E40AF]/10 border border-[#1E40AF]/20 text-xs font-semibold text-[#1E40AF]">Certified & Trusted</div>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Trust & Authority</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">深蓝灰 · 徽章 · 数据佐证</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：金融 · 医疗 · 法律 · 企业软件</p>
+                </div>
+            </a>
+
+            <a href="30-parallax-storytelling.html" class="card-link block rounded-xl overflow-hidden border border-white/10">
+                <div class="h-28 bg-[#0f0f0f] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#F59E0B]/10 to-transparent"></div>
+                    <span class="text-sm font-light text-white/60 relative">Scroll to discover</span>
+                </div>
+                <div class="p-4 bg-gray-900">
+                    <h3 class="font-bold">Parallax Storytelling</h3>
+                    <p class="text-xs text-gray-500 mt-0.5">视差 · 分章节 · 全屏 · 沉浸</p>
+                    <p class="text-[10px] text-gray-600 mt-2">适用：品牌故事 · 产品发布 · 年报 · 案例</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="px-6 py-8 border-t border-white/5 text-center text-sm text-gray-500">
+        Generated with <code class="text-gray-300">/ui-ux-pro-max</code> · 30 styles · 纯 HTML + Tailwind CSS
+    </footer>
+</body>
+</html>
